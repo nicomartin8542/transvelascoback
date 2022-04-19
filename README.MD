@@ -3,7 +3,7 @@
 ## Descripcion
 
 - API Rest hecho en NodeJS/Express utilizando base de datos MongoDB.
-- La DB esta compuesta por tres esquema/tabla: Inscripciones
+- La DB esta compuesta por un esquema/tabla: Inscripciones
 
 ### Dependenciias
 
