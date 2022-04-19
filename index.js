@@ -15,7 +15,7 @@ app.use(cors());
 app.use(express.json({ extends: true }));
 
 //Puerto de la app
-const PORT = 5555;
+const PORT = process.env.PORT;
 
 //ImPORTar Rutas
 app.use("/api/inscripcion", require("./routes/inscripciones"));
