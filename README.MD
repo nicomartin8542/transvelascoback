@@ -1,9 +1,9 @@
-# MERN Task Servidor
+# Api rest para TransVelasco
 
 ## Descripcion
 
 - API Rest hecho en NodeJS/Express utilizando base de datos MongoDB.
-- La DB esta compuesta por tres esquemas/tablas: USUARIOS/PROYECTOS/TAREAS
+- La DB esta compuesta por tres esquema/tabla: Inscripciones
 
 ### Dependenciias
 
