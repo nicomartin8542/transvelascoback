@@ -3,6 +3,28 @@ const Inscripciones = require("../models/Inscripciones");
 //Controller para crear un usuario
 exports.altaInscripcion = async (req, res) => {
   const inscripciones = new Inscripciones(req.body);
+  const keys = [
+    "nombre",
+    "apellido",
+    "marca",
+    "modelo",
+    "provincia",
+    "categoria",
+    "obraSocial",
+    "cumpleaños",
+  ];
+
+  //Valido que el body venga correcto
+  let flag;
+
+  Object.keys(body).forEach((key) => {
+    if (!keys.some((k) => k === key)) flag = true;
+  });
+
+  if (flag) {
+    res.status(409).json({ error: "Los campos del body son incorrectos! " });
+    return;
+  }
 
   try {
     await inscripciones.save();
