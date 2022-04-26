@@ -17,7 +17,7 @@ exports.altaInscripcion = async (req, res) => {
   //Valido que el body venga correcto
   let flag;
 
-  Object.keys(body).forEach((key) => {
+  Object.keys(req.body).forEach((key) => {
     if (!keys.some((k) => k === key)) flag = true;
   });
 
