@@ -22,7 +22,9 @@ exports.altaInscripcion = async (req, res) => {
   });
 
   if (flag) {
-    res.status(409).json({ error: "Los campos del body son incorrectos! " });
+    res
+      .status(409)
+      .json({ error: "Los campos del body son incorrectos! ", body: keys });
     return;
   }
 
