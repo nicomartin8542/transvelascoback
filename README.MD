@@ -16,7 +16,7 @@
 - Crear archivo variables.env con la siguente variable de entorno (Solicitar URI para conectar a base de datos):
 
 ```
- DB_MONGO=mongodb+srv://transvelasco......
+ DB_MONGO=mongodb+srv://transvelascoback......
 ```
 
 ### Ejecucion del programa
