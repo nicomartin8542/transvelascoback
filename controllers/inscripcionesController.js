@@ -6,6 +6,7 @@ exports.altaInscripcion = async (req, res) => {
   const keys = [
     "nombre",
     "apellido",
+    "dni",
     "marca",
     "modelo",
     "provincia",
@@ -31,6 +32,7 @@ exports.altaInscripcion = async (req, res) => {
   try {
     await inscripciones.save();
     res.status(200).json({ inscripciones });
+    return;
   } catch (error) {
     res.status(500).json({ error: "No se pudo completar la inscripcion!" });
   }
