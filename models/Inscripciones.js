@@ -10,7 +10,7 @@ const InscripcionesSchema = mongoose.Schema({
     type: String,
   },
 
-  documento: {
+  dni: {
     type: Number,
   },
 
